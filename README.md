@@ -56,20 +56,43 @@ This system helps the company manage:
 ## 📂 Project Structure
 
 ```
+## 📂 Project Structure
+
+```
 src
 │
-├── models
-├── services
-├── routes
-├── controllers
-├── middleware
-├── utils
+├── config        # Database and environment configuration
+├── middleware    # Authentication & error handling middleware
+├── models        # MongoDB models (User, Account, etc.)
+├── public        # Static files
+├── routes        # API routes
+├── services      # Business logic and services
+├── utils         # Helper functions (JWT, OTP, response, etc.)
 │
-└── index.js
+├── app.js        # Express app configuration
+├── index.js      # Server entry point
+│
+uploads           # Uploaded files
+.gitignore        # Ignored files
+.hintrc           # Lint configuration
+package.json      # Project dependencies
+package-lock.json # Dependency lock file
+```
 
-.env
-package.json
-README.md
+### 🔎 Structure Explanation
+
+* **config** → database connection and environment setup
+* **middleware** → authentication and error handling
+* **models** → MongoDB schemas
+* **routes** → API endpoints
+* **services** → business logic
+* **utils** → helper functions like JWT, OTP, response
+* **app.js** → express configuration
+* **index.js** → server start
+* **uploads** → file uploads
+
+This structure follows clean architecture and is suitable for scalable backend systems.
+
 ```
 
 ---
